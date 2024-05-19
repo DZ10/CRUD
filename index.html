@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Ingreso UCI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+   <main class="container">
+    <section class="crud">
+        <div class="title" id="icon">
+            <h1><strong>Control de Ingreso UCI |</strong></h1>
+            <img src="./IMAGENES/icon.jpg" alt="icon">
+        </div>
+        <form id="formRegister" class="crud_form">
+            <input type="text" placeholder="Nombre Completo" id="nombre" class="form_input">
+            <input type="number" placeholder="ID de Usuario" id="id" class="form_input">
+            <button class="button button--primary btn-agregar" onclick="agregar()" >AGREGAR</button>
+        </form>
+        <div class="registros">Registros</div>
+        <table class="crudtable" id="tabla">
+        <thead>
+            <tr>
+                <th class="table_header">Nombre</th>
+                <th class="table_header">ID</th>
+                <th class="table_header">Fecha/Hora Registro</th>
+                <th class="table_header">Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-body" class="table_body">
+        </tbody>
+        </table>
+    </section>
+   </main>   
+</body>
+</html>
